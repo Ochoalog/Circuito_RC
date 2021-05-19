@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbAUTOGEMINIModelStoreContainer" CdmEntityContainer="dbAUTOGEMINIEntities3">
+    <EntitySetMapping Name="ProjectGraphic">
+      <EntityTypeMapping TypeName="dbAUTOGEMINIModel.ProjectGraphic">
+        <MappingFragment StoreEntitySet="ProjectGraphic">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VALOR_CAPACITOR" ColumnName="VALOR_CAPACITOR" />
+          <ScalarProperty Name="VALOR_RESISTOR" ColumnName="VALOR_RESISTOR" />
+          <ScalarProperty Name="TEMPO" ColumnName="TEMPO" />
+          <ScalarProperty Name="EDO" ColumnName="EDO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

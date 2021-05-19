@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbAUTOGEMINIModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ProjectGraphic">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VALOR_CAPACITOR" Type="Double" />
+    <Property Name="VALOR_RESISTOR" Type="Double" />
+    <Property Name="TEMPO" Type="Int32" />
+    <Property Name="EDO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="dbAUTOGEMINIEntities3" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ProjectGraphic" EntityType="Self.ProjectGraphic" />
+  </EntityContainer>
+</Schema>

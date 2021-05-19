@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbAUTOGEMINIModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="GRAFICO_RC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VALOR_CAPACITOR" Type="varchar" MaxLength="50" />
+    <Property Name="VALOR_RESISTOR" Type="varchar" MaxLength="50" />
+    <Property Name="TEMPO" Type="varchar" MaxLength="50" />
+    <Property Name="EDO" Type="varchar" MaxLength="50" />
+    <Property Name="Vc_INICIAL" Type="varchar" MaxLength="50" />
+    <Property Name="V_FONTE" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityContainer Name="dbAUTOGEMINIModelStoreContainer">
+    <EntitySet Name="GRAFICO_RC" EntityType="Self.GRAFICO_RC" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

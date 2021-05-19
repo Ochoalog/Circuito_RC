@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbAUTOGEMINIModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="GRAFICO_RC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VALOR_CAPACITOR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="VALOR_RESISTOR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TEMPO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EDO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Vc_INICIAL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="V_FONTE" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="dbAUTOGEMINIEntities5" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="GRAFICO_RC" EntityType="Self.GRAFICO_RC" />
+  </EntityContainer>
+</Schema>

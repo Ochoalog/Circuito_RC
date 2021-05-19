@@ -1,0 +1,64 @@
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\ProjetoGráfico.exe.config
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\ProjetoGráfico.exe
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\ProjetoGráfico.pdb
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\ZedGraph.dll
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\ZedGraph.xml
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.csprojAssemblyReference.cache
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.Form1.resources
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.Properties.Resources.resources
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.csproj.GenerateResource.cache
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.csproj.CoreCompileInputs.cache
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.csproj.CopyComplete
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.exe
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.pdb
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\ProjetoGráfico.exe.manifest
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\bin\Debug\ProjetoGráfico.application
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.exe.manifest
+C:\Users\ochoavi\source\repos\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.application
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\ProjetoGráfico.exe.config
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\ProjetoGráfico.exe.manifest
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\ProjetoGráfico.application
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\ProjetoGráfico.exe
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\ProjetoGráfico.pdb
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\ZedGraph.dll
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\ZedGraph.xml
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.csprojAssemblyReference.cache
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.Form1.resources
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.Properties.Resources.resources
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.csproj.GenerateResource.cache
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.csproj.CoreCompileInputs.cache
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.exe.manifest
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.application
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.csproj.CopyComplete
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.exe
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\obj\Debug\ProjetoGráfico.pdb
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\EntityFramework.dll
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\EntityFramework.xml
+C:\Users\ochoavit\OneDrive - SNEF BRASIL\Documentos\BKP OCHOA\ProjetoGráfico\ProjetoGráfico\bin\Debug\EntityFramework.SqlServer.xml
