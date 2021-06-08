@@ -8,110 +8,144 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
+using System.IO.Ports;
+using ZedGraph;
 
 namespace ProjetoGráfico
 {
     public partial class Form1 : Form
     {
-        static int tempo = 0;
-        double[] x = new double[tempo];
-        double[] y = new double[tempo];
+        double[] x = new double[100000];
+        double[] y = new double[100000];
+        int j;
+        double i;
 
+        public void Create(ZedGraphControl zgc, string titulo, string nomeX, string nomeY)
+        {
+            // get a reference to the GraphPane
 
+            GraphPane myPane = zgc.GraphPane;
+
+            // Seta os títulos
+
+            myPane.Title.Text = titulo;
+            myPane.XAxis.Title.Text = nomeX;
+            myPane.YAxis.Title.Text = nomeY;
+
+        }
         public Form1()
         {
             InitializeComponent();
+            timer.Start();
+            Create(zed, "Tensão no capacitor em função do tempo", "Tempo (ms)", "Tensão no capacitor(V)");
         }
 
-        private void btnOk_Click(object sender, EventArgs e)
+
+        private void btnCarregar_Click(object sender, EventArgs e)
         {
-            
-            if (serialPort.IsOpen)
-            {
-                serialPort.Close();
-                btnOk.Text = "Iniciar";
 
-            } else
+            if (serialPort.IsOpen == false)
             {
-                btnOk.Text = "Finalizar";
-                serialPort.Open();                
+                try
+                {
+                    serialPort.PortName = comboBox1.Items[comboBox1.SelectedIndex].ToString();
+                    serialPort.Open();
+
+                }
+                catch
+                {
+                    return;
+
+                }
+                if (serialPort.IsOpen)
+                {
+                    btnCarregar.Text = "Desconectar";
+                    comboBox1.Enabled = false;
+
+                }
             }
-            int tensaoVc;
-
-            if (tempo < 0 || txtTempo.Text == "")
+            else
             {
-                MessageBox.Show("Valor de tempo inválido.");
-                txtTempo.Focus();
-                return;
+
+                try
+                {
+                    serialPort.Close();
+                    comboBox1.Enabled = true;
+                    btnCarregar.Text = "Conectar";
+                }
+                catch
+                {
+                    return;
+                }
+
             }
-
-
-            tempo = int.Parse(txtTempo.Text);
-            double[] x = new double[tempo];
-            double[] y = new double[tempo];
-
-            if (txtResistencia.Text == "")
-            {
-                MessageBox.Show("Digite valores para Resistência.");
-                txtResistencia.Focus();
-                return;
-            }
-            if(txtCapacitor.Text == "")
-            {
-                MessageBox.Show("Digite valores para Capacitância.");
-                txtCapacitor.Focus();
-                return;
-            }
-            if(tempo < 0)
-            {
-                MessageBox.Show("Valor de tempo inválido.");
-                txtTempo.Focus();
-                return;
-            }
-
-            double resistor = double.Parse(txtResistencia.Text, CultureInfo.InvariantCulture);
-            double capacitor = double.Parse(txtCapacitor.Text, CultureInfo.InvariantCulture);
-            if(txtVc.Text == "")
-            {
-                tensaoVc = 0;
-            } else
-            {
-                tensaoVc = int.Parse(txtVc.Text);
-            }
-            
-            
-            double tensaoFonte = double.Parse(txtFonte.Text);
-            string EDO = $"{tensaoFonte} + ({tensaoVc} - {tensaoFonte}) . e^ t/({resistor} . {capacitor})";
-
-            GRAFICO_RC dadosGrafico = new GRAFICO_RC();
-            dadosGrafico.VALOR_CAPACITOR = capacitor.ToString();
-            dadosGrafico.VALOR_RESISTOR = resistor.ToString();
-            dadosGrafico.TEMPO = tempo.ToString();
-            dadosGrafico.Vc_INICIAL = tensaoVc.ToString();
-            dadosGrafico.V_FONTE = tensaoFonte.ToString();
-            dadosGrafico.EDO = EDO;
-
-            using (dbAUTOGEMINIEntities5 dados = new dbAUTOGEMINIEntities5())
-            {
-                dados.GRAFICO_RC.Add(dadosGrafico);
-                dados.SaveChanges();
-            }
-
-            for (int t = 0; t < tempo; t++)
-            {
-                x[t] = t;
-                y[t] = (tensaoFonte + (tensaoVc - tensaoFonte) * Math.Exp(-(t/resistor*capacitor)));
-            }
-
-            zed.GraphPane.CurveList.Clear();
-            zed.GraphPane.AddCurve("curva", x, y, Color.Black);
-            zed.RestoreScale(zed.GraphPane);
-            zed.Refresh();
         }
 
         private void timer_Tick(object sender, EventArgs e)
         {
+            atualizaListaCOMs();
 
+            if (serialPort.IsOpen)
+            {               
+                serialPort.Write("a");
+                String[] DadosColetados = serialPort.ReadLine().Split('*');
+                if (DadosColetados.Length == 4)
+                {
+                    double TensaoVc = double.Parse(DadosColetados[1], CultureInfo.InvariantCulture);
+                    int Tempo = int.Parse(DadosColetados[2], CultureInfo.InvariantCulture);
+
+
+                    x[j] = i;
+                    y[j] = TensaoVc;
+                    j++;
+                    i += 0.1;
+                }                                
+            }
+            zed.GraphPane.CurveList.Clear();
+            zed.GraphPane.AddCurve("Capacitor", x, y, Color.Black);
+            zed.RestoreScale(zed.GraphPane);
+            zed.Refresh();
+        }
+
+        private void atualizaListaCOMs()
+        {
+            int i = 0;
+            bool quantDiferente = false;    //flag para sinalizar que a quantidade de portas mudou
+                        
+
+            //se a quantidade de portas mudou
+            if (comboBox1.Items.Count == SerialPort.GetPortNames().Length)
+            {
+                foreach (string s in SerialPort.GetPortNames())
+                {
+                    if (comboBox1.Items[i++].Equals(s) == false)
+                    {
+                        quantDiferente = true;
+                    }
+                }
+            }
+            else
+            {
+                quantDiferente = true;
+            }
+
+            //Se não foi detectado diferença
+            if (quantDiferente == false)
+            {
+                return;                     //retorna
+            }
+
+            //limpa comboBox
+            comboBox1.Items.Clear();
+
+            //adiciona todas as COM diponíveis na lista
+            foreach (string s in SerialPort.GetPortNames())
+            {
+                comboBox1.Items.Add(s);
+            }
+            //seleciona a primeira posição da lista
+            comboBox1.SelectedIndex = 0;
         }
     }
 }
+
